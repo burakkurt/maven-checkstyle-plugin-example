@@ -17,7 +17,7 @@ public class Main {
 
     public static void main(String[] args) {
         oneLineCannotExceedOneHundredTwentyCharacters();
-        thereMustBeOneWhiteSpaceAfterIfAndClosingParanthesesCondition();
+        thereMustBeOneWhiteSpaceAfterIfAndClosingParenthesesCondition();
         avoidUsingStarImport();
         avoidMoreThanThreeReturnStatement();
         avoidMoreThanThreeOperatorsForBoolean();
@@ -27,10 +27,10 @@ public class Main {
         System.out.println("something something something something something something something something something something");
     }
 
-    private static void thereMustBeOneWhiteSpaceAfterIfAndClosingParanthesesCondition() {
+    private static void thereMustBeOneWhiteSpaceAfterIfAndClosingParenthesesCondition() {
         boolean isPrint = true;
         if(isPrint){
-            System.out.println("There Must Be A WhiteSpace After If And Closing Parantheses");
+            System.out.println("There Must Be A WhiteSpace After If And Closing Parentheses");
         }
     }
 
