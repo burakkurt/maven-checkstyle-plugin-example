@@ -282,7 +282,9 @@ page at http://checkstyle.sourceforge.net/config.html -->
 
         <module name="RedundantModifier"/>
 
-        <module name="ReturnCount"/>
+        <module name="ReturnCount">
+            <property name="max" value="3"/>
+        </module>
 
         <module name="RightCurly">
             <property name="option" value="same"/>
