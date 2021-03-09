@@ -31,4 +31,5 @@ checkstyleTest {
 tasks.withType(Checkstyle) {
     ignoreFailures = false
     showViolations = true
+    checkstyleTest.enabled = false
 }
