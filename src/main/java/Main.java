@@ -8,6 +8,7 @@
  */
 
 import java.util.*;
+import javax.sql.*;
 
 public class Main {
 
@@ -15,12 +16,11 @@ public class Main {
     public final static String WRONG_MODIFIER_ORDER = "static should be before final";
 
     public static void main(String[] args) {
-        String s = "";
-
         oneLineCannotExceedOneHundredTwentyCharacters();
         thereMustBeOneWhiteSpaceAfterIfAndClosingParanthesesCondition();
         avoidUsingStarImport();
         avoidMoreThanThreeReturnStatement();
+        avoidMoreThanThreeOperatorsForBoolean();
     }
 
     private static void oneLineCannotExceedOneHundredTwentyCharacters() {
@@ -52,6 +52,17 @@ public class Main {
         }
 
         return 3;
+    }
+
+    private static boolean avoidMoreThanThreeOperatorsForBoolean() {
+        String word = "something";
+
+        if (word.startsWith("s") && word.length() == 9 && word.endsWith("g")
+                && word.charAt(1) == 'o' && word.substring(0,4).equals("some")) {
+            return true;
+        }
+
+        return false;
     }
 
 }
